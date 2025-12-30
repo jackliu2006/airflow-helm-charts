@@ -1768,9 +1768,7 @@ webserver:
     securityContexts:
       container: {}
 
-  env: 
-    - name: AIRFLOW__API__BASE_URL
-      value: https://192.168.178.38/airflow
+  env: ~
   # Additional env variable configuration for webserver
 
 # Airflow Triggerer Config
@@ -2861,7 +2859,7 @@ config:
     enable_proxy_fix: 'True'
     # For Airflow 1.10
     rbac: 'True'
-    base_url: https://192.168.178.38/airflow
+    base_url: http://192.168.178.38/airflow
 
   celery:
     flower_url_prefix: '{{ ternary "" .Values.ingress.flower.path (eq .Values.ingress.flower.path "/") }}'
