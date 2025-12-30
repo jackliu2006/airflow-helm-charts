@@ -384,7 +384,8 @@ allowPodLaunching: true
 env: 
   - name: AIRFLOW__API__BASE_URL
     value: http://192.168.178.38/airflow
-# - name: ""
+  - name: AIRFLOW__KUBERNETES__POD_IP_AS_HOSTNAME
+    value: "True"
 #   value: ""
 
 # Volumes for all airflow containers
