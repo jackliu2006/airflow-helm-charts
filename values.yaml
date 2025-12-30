@@ -1769,7 +1769,8 @@ webserver:
       container: {}
 
   env: 
-    - AIRFLOW__API__BASE_URL: https://192.168.178.38/airflow
+    - name: AIRFLOW__API__BASE_URL
+      value: https://192.168.178.38/airflow
   # Additional env variable configuration for webserver
 
 # Airflow Triggerer Config
