@@ -386,6 +386,8 @@ env:
     value: http://192.168.178.38/airflow
   - name: AIRFLOW__KUBERNETES__POD_IP_AS_HOSTNAME
     value: "True"
+  - name: AIRFLOW__CORE__HOSTNAME_CALLABLE
+    value: "airflow.utils.net.get_host_ip_address"
 #   value: ""
 
 # Volumes for all airflow containers
