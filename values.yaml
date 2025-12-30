@@ -381,7 +381,9 @@ executor: "CeleryExecutor"
 allowPodLaunching: true
 
 # Environment variables for all airflow containers
-env: []
+env: 
+  - name: AIRFLOW__WEBSERVER__BASE_URL
+    value: http://192.168.178.38/airflow
 # - name: ""
 #   value: ""
 
