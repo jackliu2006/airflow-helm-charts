@@ -1768,7 +1768,7 @@ webserver:
     securityContexts:
       container: {}
 
-  env: ~
+  env: []
   # Additional env variable configuration for webserver
 
 # Airflow Triggerer Config
