@@ -10,7 +10,7 @@ spec:
     - matches:
       - path:
           type: PathPrefix
-          value: /airflow/api
+          value: /airflow
       filters:
         - type: URLRewrite
           urlRewrite:
