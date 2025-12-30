@@ -11,12 +11,12 @@ spec:
       - path:
           type: PathPrefix
           value: /airflow
-      filters:
-        - type: URLRewrite
-          urlRewrite:
-            path:
-              type: ReplacePrefixMatch
-              replacePrefixMatch: /
+      # filters:
+      #   - type: URLRewrite
+      #     urlRewrite:
+      #       path:
+      #         type: ReplacePrefixMatch
+      #         replacePrefixMatch: /
       backendRefs:
       - name: airflow-api-server
         port: 8080
